@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BoxyBatt</string>
+    <string name="notification_channel_name">Battery Monitor</string>
+    <string name="notification_channel_desc">Persistent battery monitoring notification</string>
+</resources>

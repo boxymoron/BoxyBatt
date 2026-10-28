@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.BoxyBatt" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/background_primary</item>
+        <item name="android:navigationBarColor">@color/background_primary</item>
+        <item name="android:windowBackground">@color/background_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Roboto Mono everywhere -->
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="fontFamily">@font/roboto_mono</item>
+
+        <item name="colorPrimary">@color/accent_green</item>
+        <item name="colorPrimaryDark">@color/background_primary</item>
+        <item name="colorAccent">@color/accent_green</item>
+        <item name="colorOnPrimary">@color/background_primary</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- Override ALL Material3 typography to use Roboto Mono -->
+        <item name="textAppearanceDisplayLarge">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceDisplayMedium">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceDisplaySmall">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceHeadlineLarge">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceHeadlineMedium">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceHeadlineSmall">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceTitleLarge">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceTitleMedium">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceTitleSmall">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceBodyLarge">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceBodyMedium">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceBodySmall">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceLabelLarge">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceLabelMedium">@style/BoxyBatt.TextAppearance</item>
+        <item name="textAppearanceLabelSmall">@style/BoxyBatt.TextAppearance</item>
+
+        <!-- Button style override -->
+        <item name="materialButtonStyle">@style/BoxyBatt.Button</item>
+    </style>
+
+    <!-- Base text appearance forcing Roboto Mono -->
+    <style name="BoxyBatt.TextAppearance" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="fontFamily">@font/roboto_mono</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="BoxyBatt.Button" parent="Widget.Material3.Button">
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="fontFamily">@font/roboto_mono</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

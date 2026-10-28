@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Terminal palette — matching NetFence -->
+    <color name="background_primary">#FF050505</color>
+    <color name="background_secondary">#FF0A0A0A</color>
+    <color name="surface_card">#FF111111</color>
+    <color name="surface_elevated">#FF181818</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFEEEEEE</color>
+    <color name="text_secondary">#FF999999</color>
+    <color name="text_tertiary">#FF555555</color>
+
+    <!-- Accents -->
+    <color name="accent_green">#FF44CC44</color>
+    <color name="accent_green_dim">#FF0A200A</color>
+    <color name="accent_red">#FFDD4444</color>
+    <color name="accent_red_dim">#FF200A0A</color>
+    <color name="accent_orange">#FFDDAA44</color>
+    <color name="accent_cyan">#FF44BBCC</color>
+    <color name="accent_purple">#FF9966CC</color>
+    <color name="accent_blue">#FF4488CC</color>
+    <color name="accent_yellow">#FFCCCC44</color>
+
+    <!-- Status -->
+    <color name="status_active">#FF44CC44</color>
+    <color name="status_inactive">#FF555555</color>
+
+    <!-- Battery level colors -->
+    <color name="battery_high">#FF44CC44</color>
+    <color name="battery_medium">#FFDDAA44</color>
+    <color name="battery_low">#FFDD4444</color>
+    <color name="battery_critical">#FFFF2222</color>
+
+    <!-- Divider -->
+    <color name="divider">#FF222222</color>
+
+    <!-- Search field -->
+    <color name="search_bg">#FF080808</color>
+
+    <!-- Switch colors -->
+    <color name="switch_thumb_on">#FF44CC44</color>
+    <color name="switch_thumb_off">#FF555555</color>
+    <color name="switch_track_on">#660A200A</color>
+    <color name="switch_track_off">#33555555</color>
+
+    <!-- Chip backgrounds -->
+    <color name="chip_green_bg">#1A44CC44</color>
+    <color name="chip_red_bg">#1ADD4444</color>
+    <color name="chip_neutral_bg">#1A999999</color>
+
+    <!-- Arc / gauge -->
+    <color name="arc_background">#FF1A1A1A</color>
+    <color name="arc_track">#FF333333</color>
+</resources>

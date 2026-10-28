@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_primary">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_collapse"
+            android:scaleType="fitCenter"
+            android:rotation="90"
+            android:contentDescription="Back"
+            app:tint="@color/text_secondary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="About BoxyBatt"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0"
+            android:textColor="@color/text_tertiary"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Disclaimer -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-- DISCLAIMER --"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@drawable/bg_detail_card"
+                android:text="BoxyBatt is a battery monitoring tool. Battery usage statistics are estimates based on Android system APIs and may not reflect exact power consumption. No data leaves your device — all monitoring is performed locally."
+                android:textColor="@color/text_primary"
+                android:textSize="12sp"
+                android:lineSpacingMultiplier="1.4" />
+
+            <!-- How it works -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="-- HOW IT WORKS --"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@drawable/bg_detail_card"
+                android:text="BoxyBatt reads battery data from the Android BatteryManager API to display real-time battery health, temperature, voltage, and charging status.\n\nThe optional background service logs battery data at regular intervals to build a history of battery performance.\n\nPer-app battery usage is estimated using the UsageStatsManager API, which tracks how long each app runs in the foreground and background."
+                android:textColor="@color/text_primary"
+                android:textSize="12sp"
+                android:lineSpacingMultiplier="1.4" />
+
+            <!-- Permissions -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="-- PERMISSIONS --"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@drawable/bg_detail_card"
+                android:text="• FOREGROUND_SERVICE — Required for background battery monitoring\n• POST_NOTIFICATIONS — Show persistent monitoring notification\n• PACKAGE_USAGE_STATS — Read per-app usage for battery estimation\n• QUERY_ALL_PACKAGES — List installed apps for usage tracking\n• RECEIVE_BOOT_COMPLETED — Auto-start monitoring on boot"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:lineSpacingMultiplier="1.5" />
+
+            <!-- Tips -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="-- BATTERY TIPS --"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="12dp"
+                android:background="@drawable/bg_detail_card"
+                android:text="• Keep battery between 20-80% for optimal lifespan\n• Avoid exposing device to extreme temperatures\n• Use original or certified chargers\n• Disable unused features (GPS, Bluetooth, WiFi) when not needed\n• Reduce screen brightness and timeout\n• Monitor apps with high background usage"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:lineSpacingMultiplier="1.5" />
+
+            <!-- Copyright -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="(C) BOXYMORON 2026\nBOXYBATT v1.0"
+                android:textColor="@color/text_tertiary"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
